@@ -11,6 +11,7 @@ html, body {
     width: 100%
 }
 
+/*--------------- LANDING PAGE -----------------*/
 .landingPage {
     background: url("https://images.pexels.com/photos/34088/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
     height: 100vh;
@@ -137,18 +138,47 @@ html, body {
 }
 
 
+/*--------------- BACKGROUND PAGE -----------------*/
 
 
+#background {
+    margin: 0;
+    height: 100vh;
+    background: pink;
+}
+
+#background h1 {
+    margin-top: 0;
+    position: relative;
+    top: 3%;
+    text-align: center;
+    
+}
+
+#timeline {
+    background: yellow;
+    width: 56%;
+    min-width: 400px;
+}
+
+#slideshow {
+    background: lightblue;
+    width: 35%;
+    min-width: 400px;
+}
 
 
+#slideshow, #timeline {
+    margin: 20px;
+    margin-left: 30px !important;
+    height: 80%;
+    display: inline-block;
+    vertical-align: top;
+}
 
-
-
-
-
-
-
-
+#tlContainer {
+    margin: 5%;
+}
 
 
 
