@@ -155,19 +155,6 @@ html, body {
     
 }
 
-#timeline {
-    background: yellow;
-    width: 56%;
-    min-width: 400px;
-}
-
-#slideshow {
-    background: lightblue;
-    width: 35%;
-    min-width: 400px;
-}
-
-
 #slideshow, #timeline {
     margin: 20px;
     margin-left: 30px !important;
@@ -176,15 +163,71 @@ html, body {
     vertical-align: top;
 }
 
+#slideshow {
+    background: lightblue;
+    width: 35%;
+    min-width: 400px;
+}
+
+/** Creating Timeline**/
+
+#timeline {
+    background: yellow;
+    width: 56%;
+    min-width: 400px;
+}
+
 #tlContainer {
     margin: 5%;
 }
 
+#tlContainer div {
+    background: brown;
+}
 
+#tlContainer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
 
+#tlContainer ul li {
+    position: relative;
+    margin: 80px 40px;
+}
 
+#tlContainer ul:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: 1px dashed;
 
+}
 
+#tlContainer ul li span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40px;
+    height: 100%;
+    border: 1px solid;
+
+}
+
+#tlContainer ul li span:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 40%;
+    left: -6px;
+    border: 1px solid;
+    
+}
 
 
 
