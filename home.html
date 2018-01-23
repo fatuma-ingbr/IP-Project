@@ -7,32 +7,53 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" type="text/css" href="home.css">
     
+    <!-- Linking Javascript file-->
+    <script src="home.js" type="text/javascript"></script>
+    
     <!--TYPED.JS SCRIPT-->
     <script src="./lib/typed.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
-    
-    <script src="home.js" type="text/javascript"></script>
 </head>
 
 <body>
    <!--SIDE NAVIGATION-->
    
     <div id="sideNav" class="sideNav">
-        <a href="javascript:void(0)" class="close" onclick="closeNavBar()">&times;</a> <!--the expression "javascript:void(0) is used to prevent unwanted effects -->
+        <a href="javascript:void(0)" class="close" onclick="closeNavBar()">&times;</a> <!--the expression "javascript:void(0)" is used to prevent unwanted effects -->
         <a href="#landingPage">Home</a>
-        <a href="#personalIntro">About Me</a>
-        <a href="#companyIntro">About Company</a>
+        <a href="#personalIntro">About</a>
+        <a href="#companyIntro">Company</a>
         <a href="#services">Services</a>
-        <a href="#map">Map</a>
+        <a href="#map">Find Us</a>
         <a href="#timeline">Application Process</a>
         <a href="#blog">Blog</a>
     </div>
     <span id="menuButton" onclick="openNavBar()">&#9776;</span>
     
+    <span id="homeButton"><a href="#landingPage">&#8593;</a></span>
+    
     <!--WEB SITE SECTIONS-->
     
     <section id="landingPage">
-        <h1>Hello There</h1>
+        <div id="navigation">           
+            <a href="#personalIntro">About</a>
+            <a href="#companyIntro">Company</a>
+            <a href="#services">Services</a>
+            <a href="#blog">Blog</a>            
+        </div>
+        
+        <div class="heading">
+            <h1 id="title">
+                Hi There <br>
+                <span id="typed"></span>
+            </h1>
+                        
+            <div id="typed-strings">
+                <p>Welcome To My Personal Website</p>
+                <p>Feel free to leave a comment</p>         
+            </div>
+        </div>
+        
     </section>
     
     <section id="personalIntro">
@@ -63,5 +84,9 @@
         <h1>Footer</h1>
     </section>
     
+    <script src="home2.js" type="text/javascript"></script>
+    
 </body>
 </html>
+
+

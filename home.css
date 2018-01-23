@@ -24,41 +24,6 @@ section h1 {
     text-align: center;
 }
 
-/*Background Colors*/
-
-#landingPage{
-    background-color: aqua;
-}
-
-#personalIntro{
-    background-color: crimson;
-}
-
-#companyIntro{
-    background-color: chocolate;
-}
-
-#services {
-    background-color: dodgerblue;
-}
-
-#map{
-    background-color: hotpink;
-}
-
-#timeline{
-    background-color: darkorange;
-}
-
-#blog{
-    background-color: slateblue;
-}
-
-#footer {
-    background-color: fuchsia;
-    height: 30% !important;
-}
-
 /*******SIDE NAVIGATION*******/
 
 .sideNav {
@@ -113,6 +78,110 @@ section h1 {
     position: fixed;
     cursor: pointer;
 }
+
+#homeButton{
+    font-size: 40px;
+    background:#f1c40f;
+    padding: 0 20px 10px 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    bottom: 2%;
+    right: 2%;
+}
+
+#homeButton a {
+    color: black;
+    text-decoration: none;
+}
+
+/******LANDING PAGE*******/
+
+#landingPage{
+    background-image: url("https://images.pexels.com/photos/34088/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#navigation {
+    margin:20px;
+    padding: 0;
+    float: right;
+}
+
+#navigation a {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#navigation a:hover {
+    color: #f1c40f;
+}
+
+.heading {
+    /*positioning*/
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    
+    /*styling*/
+    height: 150px;
+    width: 50%;
+    font-family: 'Didact Gothic';
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+
+.heading h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+
+.typed-cursor, #typed{
+    font-size: 30px;
+    background: #f1c40f;
+}
+
+/******ABOUT PAGE*******/
+
+#personalIntro{
+    background-color: crimson;
+}
+
+#companyIntro{
+    background-color: chocolate;
+}
+
+#services {
+    background-color: dodgerblue;
+}
+
+#map{
+    background-color: hotpink;
+}
+
+#timeline{
+    background-color: darkorange;
+}
+
+#blog{
+    background-color: slateblue;
+}
+
+#footer {
+    background-color: fuchsia;
+    height: 30% !important;
+}
+
+
 
 
 
