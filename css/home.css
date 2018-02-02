@@ -1,0 +1,534 @@
+/*importing fonts*/
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic'); 
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+
+/*REMOVING DEFAULT STYLE*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    color: #2e2e2e;
+    font-family: "Didact Gothic", sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 10%;
+    padding: 2%;
+    font-family: Roboto, sans-serif;
+}
+
+/*******SECTION STYLING*******/
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/*******SIDE NAVIGATION*******/
+
+.sideNav {
+    background: #2e2e2e;
+    position: fixed;
+    padding-top: 20px;
+    height: 100%;
+    width:0; /* a 0 width hides the div*/
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+    z-index:1;
+}
+
+.sideNav a {
+    display: block;
+    transition: 0.5s;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #f1c40f;
+}
+
+.sideNav a:nth-child(2){
+    /*selecting the second element of the menu*/
+    margin-top: 90px;
+}
+
+.sideNav a:hover {
+    background-color: #f1c40f;
+    color: black;
+}
+
+.sideNav .close {
+    position: absolute;
+    top: 0;
+    padding: 0 !important;
+    right: 25px;
+    font-size: 40px;
+    margin-right: -15px;
+}
+
+.sideNav .close:hover {
+    background-color: #2e2e2e !important;
+    color: #f1c40f !important;
+}
+
+#menuButton {
+    font-size: 40px;
+    padding: 0 10px;
+    color: #f1c40f;
+    position: fixed;
+    cursor: pointer;
+}
+
+#homeButton{
+    font-size: 40px;
+    background:#f1c40f;
+    padding: 0 20px 10px 20px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+    bottom: 2%;
+    right: 2%;
+}
+
+#homeButton a {
+    color: black;
+    text-decoration: none;
+}
+
+/******LANDING PAGE*******/
+
+#landingPage{
+    background-image: url("https://images.pexels.com/photos/34088/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#navigation {
+    margin:20px;
+    padding: 0;
+    float: right;
+}
+
+#navigation a {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#navigation a:hover {
+    color: #f1c40f;
+}
+
+.heading {
+    /*positioning*/
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    
+    /*styling*/
+    height: 150px;
+    width: 50%;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+
+.heading h1{
+    font-size: 50px !important;
+    margin: 0;
+    font-family: 'Didact Gothic' !Important;
+}
+
+
+.typed-cursor, #typed{
+    font-size: 25px;
+    background: #f1c40f;
+}
+
+#particles-js{
+
+}
+
+/******ABOUT PAGE*******/
+
+#personalIntro{
+    background-color: white;
+}
+
+#profilePic, #myIntro{
+    display: inline-block;
+    vertical-align: top !important;
+    height: 75%;
+    width: 35%;
+    padding: 0;
+    background-color: white;
+}
+
+#myIntro{
+    margin: 0 10% 0 0;
+}
+
+#myIntro span {
+    font-weight: bolder;
+}
+
+#profilePic{
+    margin: 0 0 0 15%;
+}
+
+#profilePic img {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/***In small screens (<720px)***/
+
+@media screen and (max-width: 720px){
+    
+    #profilePic {
+        display: none;
+    }
+
+    #myIntro{
+        display: block;
+        margin-top: 2%;
+        margin-left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+
+/******Company PAGE*******/
+#companyIntro{
+    background-color: #f4f5f7;
+}
+
+.carousel, #companyInfo {
+    display: inline-block !important;
+    vertical-align: top !important;
+}
+
+#companyInfo{
+    width: 38%;
+    height: 80%;
+    background: #f4f5f7;
+    padding-top: 20px;
+}
+
+#companyInfo p {
+    margin: 70px 30px 30px 30px;
+    padding: 0;
+}
+
+.carousel{
+    width: 56% !important;
+    height: 80% !important;
+    background: #f4f5f7 !important;
+    
+}
+
+.carousel a{
+    width: 100%;
+    height: 70%;
+}
+
+.carousel a > img {
+    width: 100%;
+}
+
+/******SERVICES PAGE*******/
+#services {
+    background-color: white;
+}
+
+#serviceContainer{
+    background-color: white;
+    width: 100%;
+    height: 70%;
+}
+
+.owl-stage{
+    transition: 1s !important;
+}
+
+.services{
+    padding: 0;
+    background-color: white;
+    margin: 0 10%;
+}
+
+.services img{
+    height: 30%;
+    background: yellow;
+}
+
+.services p{
+    padding: 0;
+    background: white;
+    height: 120px;
+    width: 324px;
+}
+
+.services span {
+    font-size: 12px;
+}
+
+/******APPLICATION TIMELLINE PAGE*******/
+
+#timeline{
+    background-color: #f4f5f7;
+}
+
+
+
+/******BLOG*******/
+
+#blog{
+    background-color: white;
+    height: 110vh !important;
+}
+
+.twtContainer{
+    background: white;
+    width: 350px;
+    height: 400px;
+    display: inline-block;
+    margin: 2%;
+    padding: 0;
+    vertical-align: top;
+}
+
+/******DIARY*******/
+
+#diary{
+    background: gold;
+    text-align: center;
+    overflow: hidden;
+}
+
+.diary{
+    display: block;
+    height: 60%;
+    width: 60%;
+    align-content: center;
+    padding: 10% 5% 5% 5%;
+    font-size:30px;
+    background: blue;
+    margin-left: 20%;
+}
+
+.diary div{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/******FACEBOOK COMMENT*******/
+
+#comment{
+    background-color: darkorange;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    width:80%;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 5px 20px;
+    position: relative;
+    background-color: inherit;
+    width: 350px;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/******MAP PAGE*******/
+
+#mapContainer{
+    margin: 0;
+    padding-top: 10%;
+    background-image: url("https://images.pexels.com/photos/265642/pexels-photo-265642.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+#map{
+    height: 50%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#mapTitle{
+    background: white;
+    color: #2e2e2e;
+    padding-bottom: 30px;
+    
+}
+
+/******FOOTER*******/
+
+#footer {
+    background-color: #2E2E2E;
+    height: 30% !important;
+    text-align: center;
+    color:white;
+}
+
+#social{
+    background: #2E2E2E;
+     height: 60px;
+}
+
+.image{
+    margin: 3% 0.5%;
+    width: 20px;
+    height: 20px;
+}
+
+#links{
+    background: #2E2E2E;
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.links{
+    line-height: 60px;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.lines{
+    color:white;
+}
+
+.links:hover{
+    color: #f1c40f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

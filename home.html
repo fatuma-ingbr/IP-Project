@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Instructs Internet Explorer (IE) to use the latest rendering engine.-->
     <meta name="viewport" content="width = device-width, initial-scale = 1"> <!-- Sets the page width to device with and the zoom level to 1-->
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <title>Internship Website | Fatuma </title>
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="./css/materialize.min.css">
     
-    <!-- Linking Javascript file-->
-    <script src="home.js" type="text/javascript"></script>
+    <!-- Linking first Javascript file-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    <script src="./js/home.js" type="text/javascript"></script>
     
     <!--TYPED.JS SCRIPT-->
     <script src="./lib/typed.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
+    
 </head>
 
-<body>
-   <!--SIDE NAVIGATION-->
+<body> 
    
+    <!--SIDE NAVIGATION-->
+   
+    <div id="particles-js"></div>
+    
     <div id="sideNav" class="sideNav">
         <a href="javascript:void(0)" class="close" onclick="closeNavBar()">&times;</a> <!--the expression "javascript:void(0)" is used to prevent unwanted effects -->
         <a href="#landingPage">Home</a>
-        <a href="#personalIntro">About</a>
-        <a href="#companyIntro">Company</a>
-        <a href="#services">Services</a>
-        <a href="#map">Find Us</a>
+        <a href="#personalIntro">About Me</a>
+        <a href="#companyIntro">About ALU</a>
+        <a href="#services">ALU Programs</a>
         <a href="#timeline">Application Process</a>
         <a href="#blog">Blog</a>
+        <a href="#diary">My Diary</a>
+        <a href="#mapContainer">Find ALU</a>
     </div>
     <span id="menuButton" onclick="openNavBar()">&#9776;</span>
     
     <span id="homeButton"><a href="#landingPage">&#8593;</a></span>
     
+    
     <!--WEB SITE SECTIONS-->
     
     <section id="landingPage">
+        <!-- Top Navigation -->
         <div id="navigation">           
-            <a href="#personalIntro">About</a>
-            <a href="#companyIntro">Company</a>
-            <a href="#services">Services</a>
-            <a href="#blog">Blog</a>            
+            <a href="#personalIntro">About Me</a>
+            <a href="#companyIntro">About ALU</a>
+            <a href="#services">ALU Programs</a>
+            <a href="#blog">Blog</a>
+            <a href="#diary">My Diary</a>            
         </div>
         
         <div class="heading">
@@ -49,8 +61,9 @@
             </h1>
                         
             <div id="typed-strings">
-                <p>Welcome To My Personal Website</p>
-                <p>Feel free to leave a comment</p>         
+                <p>Welcome To My Internship Website.</p>
+                <p>In here, you will learn more about <br> my experience.</p>
+                <p>Feel free to leave a comment.</p>         
             </div>
         </div>
         
@@ -58,33 +71,167 @@
     
     <section id="personalIntro">
         <h1>About Me</h1>
+        <div id="profilePic">
+            <img src="./img/ok.jpeg" alt="Image of Me">
+        </div>
+        
+        <div id="myIntro">
+            <p>
+                For my September 2017 internship, I interned with the African Leadership College (ALC) Mauritius. ALC Mauritius is a tertiary institution whose mission is to transform Africa by empowering its future leaders.  <br> <br> While at ALC, I interned as a software engineering teacher assistant. my main role was to assist with the delivery of the Software Engineering module. General tasks included participating in session planning, attending weekly reviews, and providing academic support to students. <br> <br> Furthermore, as side projects, I helped with the design of the computer science lab. I also worked on documenting the software engineering learning outcomes. For my personal project, I collaborated with fellow computing department interns to work on a software development project. <br> <br>The purpose of the project was to develop a platform that will visualize the learning outcomes of a given module. This project was not completed during the internship period due to its complexity. However, we agreed to continue working on the project even after the internship. <br> <br>
+                
+                <span>Fun Fact:</span> I love fidget spinners!
+            </p>
+        </div>
     </section>
     
     <section id="companyIntro">
-        <h1>About Company</h1>
+       
+        <h1>About ALU</h1>
+       
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/student1.png"></a>
+            <a class="carousel-item" href="#two!"><img src="./img/student2.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="./img/student3.JPG"></a>
+        </div>
+        
+        <div id="companyInfo">
+            <p>
+                The African Leadership University (ALU) is a network of tertiaty institutions with a vision to tranform Africa through re-inventing the delivery of higher education. ALU plans to achieve its vision through educating its future leaders by using an innovate learning model.<br> <br> The institution has two physical campuses; ALU Rwanda and the African Leadership College (ALC) Mauritius. <br> <br> In additon to its undergraduate programmes, ALU offer graduate programmes under its School of Wildlife Conservation and School of Business. 
+            </p>
+        </div>
     </section>
     
     <section id="services">
-        <h1>Company Services</h1>
-    </section>
-    
-    <section id="map">
-        <h1>Map</h1>
+        <h1>ALU Programs</h1>
+        <div class="owl-carousel owl-theme" id="serviceContainer">
+            <div class="services">
+                <img src="img/alu6.png">
+                <p> This is the African Leadership University Rwanda. ALU Rwanda offers undergraduate degrees in Computer Science, Entrepreneurship, Global Challenges as well as International Business and Trade.
+                <br><br> <span>Retrieved from <a href="https://www.alueducation.com/campuses/alu-rwanda/" target="_blank">ALU Rwanda</a></span>
+                </p>
+            </div>
+            <div class="services">
+                <img src="img/alu2.png">
+                <p>This is the ALU School of Business (ALUSB). ALUSB is the first and only pan-African school of business. The ALUSB education is unique in a way that is tailored to the African context. <br><br> <span>Retrieved from <a href="https://www.alusb.com/" target="_blank">ALUSB</a></span> </p> 
+            </div>
+            <div class="services">
+                <img src="img/alu5.png">
+                <p>This is the African Leadership College Mauritius. ALC offers degrees in Business, Computing, Electrical Engineering as well as Social Science in partnership with GCU. This is the first ALU campus!<br><br> <span>Retrieved from <a href="https://www.alueducation.com/" target="_blank">ALC</a></span> </p> 
+            </div>
+            <div class="services">
+                <img src="img/alu4.png">
+                <p> The ALU School Wildlife Conservation is a graduate programme that equip students with necessary skills that will solve global and African conservation challenges.</p> 
+            </div>
+        </div>
     </section>
     
     <section id="timeline">
         <h1>Application Process</h1>
+        <div id="myTimeline">
+            <div>
+                My Content 1
+            </div>
+            <div>
+                My Content 2
+            </div>
+            <div>
+                My Content 3
+            </div>
+            <div>
+                My Content 4
+            </div>
+        </div>
     </section>
     
     <section id="blog">
         <h1>Blog</h1>
+        <div class="twtContainer">
+            <blockquote class="twitter-tweet" data-lang="en" width="350px" height="400px;">
+                <p lang="en" dir="ltr">The Founder&#39;s Breakfast today was an incredible moment for the Founding class in <a href="https://twitter.com/hashtag/Mauritius?src=hash&amp;ref_src=twsrc%5Etfw">#Mauritius</a> to reconvene with peers, staff from their first year, to celebrate experiences &amp; emotional stories of growth. They lead a powerful legacy on campus this year. <a href="https://twitter.com/hashtag/StudyAtALU?src=hash&amp;ref_src=twsrc%5Etfw">#StudyAtALU</a> <a href="https://twitter.com/hashtag/LifeAtALU?src=hash&amp;ref_src=twsrc%5Etfw">#LifeAtALU</a> <a href="https://t.co/Z9od3BRjPw">pic.twitter.com/Z9od3BRjPw</a></p>&mdash; ALU (@alueducation) <a href="https://twitter.com/alueducation/status/955486266933460993?ref_src=twsrc%5Etfw">January 22, 2018</a>
+            </blockquote>
+        </div>
+            
+        <div class="twtContainer">
+            <blockquote class="twitter-tweet" data-lang="en">
+                <p lang="en" dir="ltr">&quot;Our slogan should be: do hard things. That is what life is about. Build resilience. Keep persevering.&quot; In a conversation w/ <a href="https://twitter.com/gouchercollege?ref_src=twsrc%5Etfw">@gouchercollege</a> and <a href="https://twitter.com/Middlebury?ref_src=twsrc%5Etfw">@Middlebury</a> exchange students, ALU founder <a href="https://twitter.com/FredSwaniker?ref_src=twsrc%5Etfw">@FredSwaniker</a> shared inspiration, his experiences and <a href="https://twitter.com/hashtag/leadership?src=hash&amp;ref_src=twsrc%5Etfw">#leadership</a> journey. <a href="https://twitter.com/hashtag/ALUGlobalConnect?src=hash&amp;ref_src=twsrc%5Etfw">#ALUGlobalConnect</a> <a href="https://t.co/tuCbdkyfKI">pic.twitter.com/tuCbdkyfKI</a></p>&mdash; ALU (@alueducation) <a href="https://twitter.com/alueducation/status/956372728268783618?ref_src=twsrc%5Etfw">January 25, 2018</a>
+            </blockquote>
+        </div>
+        
+        <div class="twtContainer">
+            <blockquote class="twitter-tweet" data-lang="en">
+                <p lang="en" dir="ltr">&quot;I truly believe that life is not about how much money you make, but about who you spend that life with - your family, loved ones, colleagues, and your personal and <a href="https://twitter.com/hashtag/professional?src=hash&amp;ref_src=twsrc%5Etfw">#professional</a> <a href="https://twitter.com/hashtag/network?src=hash&amp;ref_src=twsrc%5Etfw">#network</a>. That, at the end of the day, is your true wealth.&quot; - <a href="https://twitter.com/FredSwaniker?ref_src=twsrc%5Etfw">@FredSwaniker</a> <a href="https://t.co/2eX8GfS3LZ">https://t.co/2eX8GfS3LZ</a> <a href="https://t.co/NtcbNXu5JC">pic.twitter.com/NtcbNXu5JC</a></p>&mdash; ALU (@alueducation) <a href="https://twitter.com/alueducation/status/954084229503053824?ref_src=twsrc%5Etfw">January 18, 2018</a>
+            </blockquote>
+        </div>
+    </section>
+    
+    <section id="comment">
+        <h1>Comment</h1>
+    </section>
+    
+<!--
+    <section id="diary">
+        <h1>My Diary</h1>
+        <div class="diary mySlides">"If I could back in time, I would have applied to internship opportunities earlier than I did."</div>
+        <div class="diary mySlides">"I would have invested more time in Career Development sessions because they prepare you for the internship"</div>
+        <div class="diary mySlides">"I would have revisited certain skills before starting my internships."</div>
+        
+        <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="ight" onclick="plusDivs(+1)">&#10095;</button>
+    </section>
+-->
+    
+    <section id="mapContainer">
+        <h1 id="mapTitle">Find ALU</h1>
+        <div id="map"></div>
     </section>
     
     <section id="footer">
-        <h1>Footer</h1>
+       
+        <!--social-->
+        <div id="social">
+           <a href="#"><img class="image" src="./icons/facebook.png"></a>
+           <a href="#"><img class="image" src="./icons/twitter.png"></a>  
+        </div>
+        
+        <!--quick links-->
+        
+        <div id="links">
+            <a href="#landingPage" class="links">Home</a>
+            <a class="lines">&#124;</a>
+            <a href="#personalIntro" class="links">About Me</a>
+            <a class="lines">&#124;</a>
+            <a href="#companyIntro" class="links">About ALU</a>
+            <a class="lines">&#124;</a>
+            <a href="#services" class="links">ALU Programs</a>
+            <a class="lines">&#124;</a>
+            <a href="#timeline" class="links">Application Process</a>
+            <a class="lines">&#124;</a>
+            <a href="#blog" class="links">Blog</a>
+            <a class="lines">&#124;</a>
+            <a href="#diary" class="links">My Diary</a>
+            <a class="lines">&#124;</a>
+            <a href="#mapContainer" class="links">Find ALU</a>
+        </div>
+        
+        <!--copyrights-->
+        
+        <div>
+            <p class="copy">&copy; 2018 Fatuma's Internship Diary.</p>
+        </div>
     </section>
     
-    <script src="home2.js" type="text/javascript"></script>
+    
+    <!--SCRIPTS-->
+    
+    
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="./js/particles.js"></script>
+    <script src="./js/home2.js" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvYLFErENiMycupsntn0ncd7ikH3CmfmA&callback=initializeMap"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
     
 </body>
 </html>
